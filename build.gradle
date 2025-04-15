@@ -39,6 +39,28 @@ dependencies {
      */
     implementation 'org.springframework:spring-context:5.3.27'
 
+    /**
+     * @Data, @Builder 등 반복되는 코드를 자동으로 생성해주는 lombok 라이브러리 추가
+     * 컴파일 시점에만 필요하기 때문에 compileOnly
+     */
+    https://mvnrepository.com/artifact/org.projectlombok/lombok
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    testCompileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.30'
+
+    /**
+     * 로그 출력을 도와주는 라이브러리(콘솔, 파일, 레벨별 로깅 등)
+     */
+    implementation 'org.apache.logging.log4j:log4j-api:2.22.1'
+    implementation 'org.apache.logging.log4j:log4j-core:2.22.1'
+    implementation 'org.apache.logging.log4j:log4j-slf4j-impl:2.22.1'
+
+    /**
+     * JSP 에서 자주 사용하는 기능들을 태그로 쉽게 사용할 수 있게 해주는 라이브러리
+     */
+    // https://mvnrepository.com/artifact/jstl/jstl
+    implementation 'jstl:jstl:1.2'
 
 
 }
