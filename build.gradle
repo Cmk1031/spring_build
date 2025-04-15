@@ -88,7 +88,6 @@ dependencies {
      */
     implementation 'org.springframework:spring-tx:5.3.27'
 
-
     /**
      * DB 커넥션 풀 라이브러리
      * DB 연결을 매번 새로 하지 않고, 미리 만들어진 커넥션을 재사용
@@ -102,8 +101,6 @@ dependencies {
      */
     implementation 'org.mybatis:mybatis:3.5.7'
     implementation 'org.mybatis:mybatis-spring:2.0.6'
-
-
 }
 
 test {
