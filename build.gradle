@@ -39,11 +39,27 @@ dependencies {
      */
     implementation 'org.springframework:spring-context:5.3.27'
 
+
+    /**
+     * Spring 의 웹 애플리케이션, MVC 구조를 구현할 때 필요한 모든 기능
+     */
+    implementation 'org.springframework:spring-webmvc:5.3.27'
+
+
+    /**
+     * 단위 테스트, 통합 테스트에서 Spring 의 기능을 활용 
+     */
+    implementation 'org.springframework:spring-test:5.3.27'
+
+
+
+
+
     /**
      * @Data, @Builder 등 반복되는 코드를 자동으로 생성해주는 lombok 라이브러리 추가
      * 컴파일 시점에만 필요하기 때문에 compileOnly
      */
-    https://mvnrepository.com/artifact/org.projectlombok/lombok
+    //https://mvnrepository.com/artifact/org.projectlombok/lombok
     compileOnly 'org.projectlombok:lombok:1.18.30'
     testCompileOnly 'org.projectlombok:lombok:1.18.30'
     annotationProcessor 'org.projectlombok:lombok:1.18.30'
