@@ -26,6 +26,21 @@ dependencies {
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:${junitVersion}")
     testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:${junitVersion}")
+
+    /**
+     * Spring Framework 의 핵심 기능을 프로젝트에 포함시킨다.
+     */
+    // https://mvnrepository.com/artifact/org.springframework/spring-core
+    implementation 'org.springframework:spring-core:5.3.27'
+
+    /**
+     * Spring-core 의 상위 모듈로
+     * ApplicationContext, 스프링 빈 관리 기능, 애노테이션 기반 설정 등을 포함한다.
+     */
+    implementation 'org.springframework:spring-context:5.3.27'
+
+
+
 }
 
 test {
